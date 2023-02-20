@@ -1,0 +1,91 @@
+.subscribe-button {
+    background-color: red;
+    color: white;
+    border: none;
+
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 20px;
+    
+  
+  /*Better than height and width. CSS Box Model */
+    padding-top: 10px; /* If we change text, it will keep the text spacing right */
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+      
+    transition: opacity 0.15s; 
+    vertical-align: top;  /*Aligns boxes together, not just text */
+  }
+
+  /* pseudo class styles*/
+  .subscribe-button:hover {
+    opacity: 0.7; 
+    
+  }
+
+  /* pseudo class styles*/
+  .subscribe-button:active {
+    opacity: 0.5;
+  }
+
+  .join-button {
+    background-color: white;
+    color: rgb(41, 118, 211);
+    border-color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+
+    padding-top: 9px; /* Minus one pixel because border width to align */
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s; 
+    
+  }
+
+  /* pseudo class styles*/
+  .join-button:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+
+  /* pseudo class styles*/
+  .join-button:active {
+    opacity: 0.7; 
+    
+  }
+
+  .tweet-button {
+    background-color: rgb(33, 142, 214);
+    color: rgb(255, 255, 255);
+    border: none; /* or border-style:none */
+    
+    padding-top: 10px; /* If we change text, it will keep the text spacing right */
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border-radius: 18px; /* half of height, or border-radius: 50% */
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px; 
+    transition: box-shadow 0.15s; 
+    vertical-align: top;
+    
+  }
+
+/* pseudo class styles*/
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    /* 3 horizontal, vertical, blur, color
+
+    rbga (the opacity of the color) */
+
+  }
+  

@@ -1,0 +1,94 @@
+<!-- Hovering, Transitions, and shadows for buttons. -->
+<style>
+  .subscribe-button {
+    background-color: red;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s; /*changes smoothly */
+    
+
+  }
+
+  /* pseudo class styles*/
+  .subscribe-button:hover {
+    opacity: 0.7; /*used to fade out the element [0..1] */
+    
+  }
+
+  /* pseudo class styles*/
+  .subscribe-button:active {
+    opacity: 0.5;
+  }
+
+  .join-button {
+    background-color: white;
+    color: rgb(41, 118, 211);
+    border-color: rgb(41, 118, 211);
+    ;
+    border-style: solid;
+    border-width: 1px;
+    height: 36px;
+    width: 70px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s; /*changes smoothly */
+    
+  }
+
+  /* pseudo class styles*/
+  .join-button:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+
+  /* pseudo class styles*/
+  .join-button:active {
+    opacity: 0.7; /*used to fade out the element [0..1] */
+    
+  }
+
+  .tweet-button {
+    background-color: rgb(33, 142, 214);
+    color: rgb(255, 255, 255);
+    border: none; /* or border-style:none */
+    
+    border-width: 0px;
+    height: 36px;
+    width: 80px;
+    border-radius: 18px; /* half of height, or border-radius: 50% */
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px; /*gives space(margin) to the button */
+    transition: box-shadow 0.15s; /*changes smoothly */
+
+    
+  }
+
+/* pseudo class styles*/
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    /* 3 horizontal, vertical, blur, color
+
+    rbga (the opacity of the color) */
+
+  }
+  
+</style>
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
